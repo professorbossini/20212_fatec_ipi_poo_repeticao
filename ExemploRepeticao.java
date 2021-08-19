@@ -4,25 +4,34 @@ public class ExemploRepeticao{
     public static void main(String[] args) {
         Random gerador = new Random();
         double nota1, nota2;
+        int totalAlunos = 10;
+        do{
+            nota1 = gerador.nextDouble() * 10;
+            nota2 = gerador.nextDouble() * 10;
+            System.out.printf("Média %.2f\n", (nota1 + nota2) / 2);
+            ++totalAlunos;
+        }while( totalAlunos <= 10);
+        
+        
         //inicialização (incluindo, talvez, a declaração)
         //teste de continuidade
         //incremento
-        for (int totalAlunos = 1; totalAlunos <= 5; totalAlunos++){
-            nota1 = gerador.nextDouble() * 10;
-            nota2 = gerador.nextDouble() * 10;
-            System.out.println(
-                String.format("Média: %.2f", (nota1 + nota2) / 2)
-            );
-        }
-        int totalAlunos = 1;
-        while (totalAlunos <= 5){
-            nota1 = gerador.nextDouble() * 10;
-            nota2 = gerador.nextDouble() * 10;
-            System.out.println(
-                String.format("Média: %.2f", (nota1 + nota2) / 2)
-            );
-            totalAlunos++;
-        }
+        // for (int totalAlunos = 1; totalAlunos <= 5; totalAlunos++){
+        //     nota1 = gerador.nextDouble() * 10;
+        //     nota2 = gerador.nextDouble() * 10;
+        //     System.out.println(
+        //         String.format("Média: %.2f", (nota1 + nota2) / 2)
+        //     );
+        // }
+        // int totalAlunos = 1;
+        // while (totalAlunos <= 5){
+        //     nota1 = gerador.nextDouble() * 10;
+        //     nota2 = gerador.nextDouble() * 10;
+        //     System.out.println(
+        //         String.format("Média: %.2f", (nota1 + nota2) / 2)
+        //     );
+        //     totalAlunos++;
+        // }
         // //repetição controlada por contador
         // int totalAlunos = 1;
         // //içamento
