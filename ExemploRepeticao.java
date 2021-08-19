@@ -14,6 +14,15 @@ public class ExemploRepeticao{
                 String.format("Média: %.2f", (nota1 + nota2) / 2)
             );
         }
+        int totalAlunos = 1;
+        while (totalAlunos <= 5){
+            nota1 = gerador.nextDouble() * 10;
+            nota2 = gerador.nextDouble() * 10;
+            System.out.println(
+                String.format("Média: %.2f", (nota1 + nota2) / 2)
+            );
+            totalAlunos++;
+        }
         // //repetição controlada por contador
         // int totalAlunos = 1;
         // //içamento
